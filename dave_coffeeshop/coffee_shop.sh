@@ -22,7 +22,7 @@ do
 	"LOG")
 		read -p "Barista name : " name
 		read -p "Drinking : " drinking
-		read price <<< $(echo "foo" | awk -v key=$drinking 'BEGIN {    
+		read price <<< $(awk -v key=$drinking 'BEGIN {    
 		  item["AME"]=100;
 		  item["ESP"]=120;
 		  item["CAP"]=150;
